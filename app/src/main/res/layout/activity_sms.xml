@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sms">
+    <TextView
+        android:id="@+id/person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系人："
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/hm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:layout_below="@id/person"/>
+    <TextView
+        android:id="@+id/nr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="短信内容："
+        android:textSize="24sp"
+        android:layout_below="@+id/hm"/>
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scrollbars="vertical"
+        android:hint="请输入短信内容"
+        android:layout_marginTop="30dp"
+        android:textSize="36sp"
+        android:layout_below="@+id/nr"/>
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
